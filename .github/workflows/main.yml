@@ -5,7 +5,7 @@ jobs:
   test1:
       runs-on: arc-runner-set
       steps:
-        - name: step1
-          run: id
-        
-          #uses: docker://ubuntu:latest
+        - name: step1        
+          uses: docker://ubuntu:latest
+          with: 
+            args: echo test

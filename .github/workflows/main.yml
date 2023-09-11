@@ -1,0 +1,9 @@
+name: Test workflow
+on:
+  workflow_dispatch:
+jobs:
+  test1:
+      runs-on: arc-runner-set
+      steps:
+        - name: step1
+          uses: docker://ubuntu:latest
